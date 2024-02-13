@@ -1,0 +1,105 @@
+<app-navbar-d></app-navbar-d>
+
+<body>
+
+  <div class="background-overlay">
+    <app-cells></app-cells>
+
+    <div class="container mt-4">
+      <h1><i class="bi bi-person-plus-fill"></i> Registro de Alumnos</h1>
+      <div class="grid-container">
+        <div class="card">
+          <form>
+            <div class="form-group">
+              <label for="identificacion"><i class="bi bi-card-heading"></i> Identificación</label>
+              <input type="text" [(ngModel)]="identificacion" [ngModelOptions]="{standalone: true}" id="identificacion"
+                name="identificacion" placeholder="Identificación" required pattern="[0-9]{10}"
+                title="La identificación debe contener 10 dígitos numéricos">
+            </div>
+
+            <div class="form-group">
+              <label for="nombre"><i class="bi bi-person"></i> Nombre</label>
+              <input type="text" [(ngModel)]="nombre" [ngModelOptions]="{standalone: true}" id="nombre" name="nombre"
+                placeholder="Nombre" required>
+            </div>
+
+            <div class="form-group">
+              <label for="apellido"><i class="bi bi-person"></i> Apellido</label>
+              <input type="text" [(ngModel)]="apellido" [ngModelOptions]="{standalone: true}" id="apellido"
+                name="apellido" placeholder="Apellido" required>
+            </div>
+
+            <div class="form-group">
+              <label for="cursos"><i class="bi bi-book"></i> Cursos</label>
+              <input type="text" [(ngModel)]="cursos" [ngModelOptions]="{standalone: true}" id="cursos" name="cursos"
+                placeholder="Cursos" required>
+            </div>
+
+            <div class="form-group">
+              <label for="edad"><i class="bi bi-calendar"></i> Edad</label>
+              <input type="number" [(ngModel)]="edad" [ngModelOptions]="{standalone: true}" id="edad" name="edad"
+                placeholder="Edad" required min="1">
+            </div>
+
+            <div class="form-group">
+              <label for="telefono"><i class="bi bi-telephone"></i> Teléfono</label>
+              <input type="tel" [(ngModel)]="telefono" [ngModelOptions]="{standalone: true}" id="telefono" name="telefono"
+                placeholder="Teléfono" required pattern="[0-9]{10}"
+                title="El teléfono debe contener 10 dígitos numéricos">
+            </div>
+
+            <div class="form-group">
+              <label for="email"><i class="bi bi-envelope"></i> Email</label>
+              <input type="email" [(ngModel)]="email" [ngModelOptions]="{standalone: true}" id="email" name="email"
+                placeholder="Email">
+            </div>
+            <div class="button-container mt-4">
+              <button type="button" class="btn btn-primary" (click)="saveAlumno()"><i class="bi bi-save"></i>
+                Guardar</button>
+              <button type="button" class="btn btn-warning mr-4" (click)="updateAlumno()"><i class="bi bi-pencil"></i>
+                Actualizar</button>
+              <button type="button" class="btn btn-secondary " (click)="getAllAlumnos()"><i class="bi bi-list"></i>
+                Mostrar
+                lista</button>
+            </div>
+          </form>
+        </div>
+
+
+        <div class="table">
+          <h1>Listado</h1>
+          <table class="table table-dark table-striped-columns">
+            <thead>
+              <tr class="table-success">
+                <th scope="col">Identificación</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Apellido</th>
+                <th scope="col">Cursos</th>
+                <th scope="col">Edad</th>
+                <th scope="col">Teléfono</th>
+                <th scope="col">Email</th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let alumnoItem of alumnoArray">
+                <td>{{ alumnoItem.identificacion }}</td>
+                <td>{{ alumnoItem.nombre }}</td>
+                <td>{{ alumnoItem.apellido }}</td>
+                <td>{{ alumnoItem.cursos }}</td>
+                <td>{{ alumnoItem.edad }}</td>
+                <td>{{ alumnoItem.telefono }}</td>
+                <td>{{ alumnoItem.email }}</td>
+                <td>
+                  <button type="button" class="btn btn-success" (click)="setUpdate(alumnoItem)">Editar</button>
+                  <button type="button" class="btn btn-danger" (click)="setDelete(alumnoItem)">Eliminar</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+

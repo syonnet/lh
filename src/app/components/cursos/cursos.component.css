@@ -1,0 +1,128 @@
+.body1 {
+  background-color: #2d375c; /* Repetir la imagen solo verticalmente */
+}
+
+.container-wrapper {
+  margin-top: px;
+  background-color: #052243; /* Ajusta el margen superior para dejar espacio para el navbar */
+}
+
+.custom-container {
+  max-width: 400px; /* Reducir el ancho máximo del contenedor */
+  margin: 0px auto;
+  padding: 40px; /* Aumentar el espacio interno */
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  padding-top: 10%;
+}
+
+
+.custom-form-control,
+.custom-form-control-file {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.custom-btn {
+  padding: 10px 20px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.custom-btn-primary {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.custom-btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.custom-btn-danger {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.custom-btn-danger:hover {
+  background-color: #bd2130;
+}
+
+
+/* ---------------------------- */
+
+.custom-cursos-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Cada columna tiene un ancho mínimo de 250px */
+  grid-gap: 30px; /* Aumentamos el espacio entre las columnas */
+  justify-content: center; /* Centramos el contenido horizontalmente */
+  padding: 50px;
+  /* Agregamos un poco de espacio alrededor del grid */
+}
+
+
+.custom-curso-item {
+  background-color: #b9a8f0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  grid-auto-rows: 200px; 
+}
+
+.custom-img-container {
+  border-radius: 8px; /* Borde redondeado para la imagen */
+  overflow: hidden; /* Oculta cualquier contenido que se desborde de los límites del contenedor */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidad */
+  transition: transform 0.3s ease;
+}
+.custom-img-container:hover {
+  transform: translateY(-5px); 
+}
+.custom-img-fluid {
+  width: 100%;
+  height: auto;
+}
+
+.custom-curso-item h1 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.custom-curso-item h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.custom-btn-wrapper {
+  margin-top: 10px; /* Separación entre botones */
+}
+
+.custom-btn {
+  /* Estilos generales para los botones */
+  padding: 10px 20px; /* Espaciado interno */
+  border: none; /* Sin borde */
+  border-radius: 4px; /* Borde redondeado */
+  cursor: pointer; /* Cursor apuntador */
+  transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+}
+
+.custom-btn-success {
+  background-color: #28a745; /* Color de fondo verde */
+  color: #fff; /* Color del texto blanco */
+}
+
+.custom-btn-danger {
+  background-color: #dc3545; /* Color de fondo rojo */
+  color: #fff; /* Color del texto blanco */
+}
+
+.custom-btn:hover {
+  background-color: rgba(0, 0, 0, 0.1); /* Cambio de color de fondo al pasar el mouse */
+}
