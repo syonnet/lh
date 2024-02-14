@@ -13,6 +13,7 @@ import { NavbarDComponent } from './mod/navbar-d/navbar-d.component';
 import { FormsModule } from '@angular/forms';
 import { CellsComponent } from './mod/cells/cells.component';
 import { AlumnoComponent } from './components/alumno/alumno.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { AlumnoComponent } from './components/alumno/alumno.component';
     CursosComponent,
     NavbarDComponent,
     CellsComponent,
-    AlumnoComponent
+    AlumnoComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
