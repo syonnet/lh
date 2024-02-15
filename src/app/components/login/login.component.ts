@@ -32,6 +32,6 @@ export class LoginComponent implements OnInit {
 
   goToRegistration() {
     console.log("Registration Page");
-    this._router.navigate(['/registration'])
+    this._router.navigate(['/alumno'])
   }
 }
