@@ -7,6 +7,7 @@ import { DomSanitizer } from '@angular/platform-browser';
   styleUrls: ['./navbar-d.component.css']
 })
 export class NavbarDComponent {
+  authService: any;
   constructor(private sanitizer: DomSanitizer) {}
 
   ngOnInit() {
@@ -18,4 +19,13 @@ export class NavbarDComponent {
     script.src = scriptUrl;
     document.head.appendChild(script);
   }
+  logout() {
+    this.authService.logout();
+    console.log('Cerrando sesión...');
+    window.location.href = '/home'; 
+  }
+
+
+
+  
 }

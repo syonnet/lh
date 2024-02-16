@@ -6,7 +6,7 @@ interface Curso {
   nombre: string;
   descripcion: string;
   duracion_meses: number;
-  imagen: string; // Ruta relativa de la imagen en Django
+  imagen: string;
   costo: number;
 }
 
@@ -20,7 +20,7 @@ export class CursosComponent implements OnInit {
   nombre: string = "";
   descripcion: string = "";
   duracion_meses: number = 0;
-  imagen: File | null = null; // Variable para almacenar la imagen seleccionada
+  imagen: File | null = null; // variable para seleccionar la imagen
   costo: number = 0;
   currentCursoID = "";
 
@@ -62,7 +62,6 @@ export class CursosComponent implements OnInit {
     this.nombre = curso.nombre;
     this.descripcion = curso.descripcion;
     this.duracion_meses = curso.duracion_meses;
-    // this.imagen = curso.imagen; // No asignamos directamente la imagen
     this.costo = curso.costo;
     this.currentCursoID = curso.id.toString();
   }

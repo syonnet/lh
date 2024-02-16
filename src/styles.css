@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap");
 
 :root {
-  --primary-color: #504099;
-  --secondary: #40bad5;
+  --primary-color: #f7f6fc;
+  --secondary: #2a21d06a;
   --black: #141414;
   --white: #fff;
   --dark1: #6868685b;
@@ -22,7 +22,7 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size:62.5%;
   overflow-x: hidden;
   scroll-padding-top: 9rem;
   scroll-behavior: smooth;
@@ -216,7 +216,8 @@ section {
   display: none;
 }
 
-.header .login-form {
+/* -------login  */
+/* .header .login-form {
   position: absolute;
   top: 115%;
   right: -105%;
@@ -262,8 +263,11 @@ section {
   font-size: 1.5rem;
   color: var(--black);
   cursor: pointer;
-}
+} */
 
+
+
+/* -----fin de login----- */
 /* home */
 
 .home {
@@ -679,7 +683,7 @@ section {
 
 .blog .box-container .box .image h3 {
   font-size: 1.5rem;
-  color: #444;
+  color: #f20c0c;
   position: absolute;
   top: 1.5rem;
   left: 1rem;
@@ -690,7 +694,7 @@ section {
 
 .blog .box-container .box .content {
   padding: 2rem 2rem;
-  background: #26df987a;
+  background: #013a40a3;
   border-radius: 0 0 2rem 2rem;
 }
 

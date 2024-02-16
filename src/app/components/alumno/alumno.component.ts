@@ -22,6 +22,7 @@ export class AlumnoComponent {
   }
 
   saveAlumno() {
+    
     let bodyData = {
       "identificacion": this.identificacion,
       "nombre": this.nombre,
